@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Diri</title>
+</head>
+<body>
+    <h2>Form Data Diri</h2>
+    <!-- <form action="" method="post"> Action: pindah dan kirim data ke server.php method: http method ada Get(default), Post, Delete, Update, Fetch -->
+<!--  
+        <p>Apa warna favoritmu?</p>
+        <select>
+            <option>Merah</option>
+            <option>Kuning</option>
+            <option>Hijau</option>
+            <option>Biru</option>
+        </select>
+
+        <p>Apa makanan favoritmu</p>
+        <select>
+            <option value="Papeda">Papeda</option>
+            <option>Soto Kwali</option>
+            <option>Sate Padang</option>
+            <option selected>Gudeg</option>
+        </select>
+
+        <p>Apa makanan favoritmu</p>
+        <select multiple>
+            <option>Papeda</option>
+            <option>Soto Kwali</option>
+            <option>Sate Padang</option>
+            <option>Gudeg</option>
+        </select>
+
+        <p>Minuman favoritmu?</p>
+        <select>
+            <optgroup label="Jus Buah">
+                <option>Jus Apel</option>
+                <option>Jus Jeruk</option>
+                <option>Jus Mangga</option>
+            </optgroup>
+
+            <optgroup label="Jamu">
+                <option>Kencur</option>
+                <option>Asem</option>
+                <option>Brotowali</option>
+            </optgroup>
+        </select>
+
+        <br><br><br>
+        <p>
+            <label for="pass">Username:</label> for adalah ID, gunanya label ketika kita klik labelnya akan masuk ke input (menjadi satu kesatuan)
+            <input type="text" name="user">
+        </p>
+
+        <p>
+            <label for="user">Password:</label>
+            <input type="password" id="pass">
+        </p>
+
+        <br><br> -->
+        <fieldset>
+            <legend>Personal Data</legend>
+            <p>
+                <label for="nama">Nama:</label>
+                <input type="text " name="nama" id="nama" placeholder="nama" required>
+            </p>
+            <p>
+                <label for="birthplace">Tempat</label> / <label for="birthdate">Tanggal lahir:</label>
+                <input type="text" id="birthplace" placeholder="tempat lahir" required> /
+                <input type="date" name="birthdate" id="birthdate" required>
+            </p>
+            <p>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="gender" value="Pria" required>Pria
+                <input type="radio" name="gender" id="gender" value="Wanita" required>Wanita
+            </p>
+            <p>
+                <label for="phone" >Phone:</label>
+                <input type="tel" id="phone" placeholder="081234567890" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="user@gmail.com" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+                <legend>Riwayat Pendidikan</legend>
+
+                <table>
+                        <tr>
+                            <th></th>
+                            <th>Nama Institusi</th>
+                            <th>Tahun Lulus</th>
+                        </tr>
+                        <tr>
+                            <th align="left">SD</td>
+                            <td><input type="text " id="instSD" placeholder="nama SD"></td>
+                            <td><input type="year " id="yearSD" placeholder="tahun lulus SD"></td>
+                        </tr>
+                         <tr>
+                            <th align="left">SMP</td>
+                            <td><input type="text " id="instSMP" placeholder="nama SMP"></td>
+                            <td><input type="year " id="yearSMP" placeholder="tahun lulus SMP"></td>
+                        </tr>
+                        <tr>
+                            <th align="left">SMA / SMK</td>
+                            <td><input type="text " id="instSMA" placeholder="nama SMA/SMK"></td>
+                            <td><input type="year " id="yearSMA" placeholder="tahun lulus SMA/SMK"></td>
+                        </tr>
+                        <tr>
+                            <th align="left">S1</td>
+                            <td><input type="text " id="instS1" placeholder="nama univ."></td>
+                            <td><input type="year " id="yearS1" placeholder="tahun lulus S1"></td>
+                        </tr>
+                    </table>
+        </fieldset>
+
+        
+        <fieldset>
+                <legend>Riwayat Pekerjaan</legend>
+                <i>*diurutkan dari yang terbaru</i>
+                <table>
+                        <tr>
+                            <th>Nama Perusahaan</th>
+                            <th>Lama Bekerja (Tahun)</th>
+                            <th>Posisi</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="work1" placeholder="PT Abcd"></td>
+                            <td><input type="number " id="work1dur" placeholder="1"></td>
+                            <td><input type="text" id="work1pos" placeholder="Supervisor"> </td>
+                            <td><input type="checkbox" id="nowork1"><i>check bila tidak ada</i></td>
+                        </tr>
+                         <tr>
+                            <td><input type="text" id="work2" ></td>
+                            <td><input type="number " id="work2dur" ></td>
+                            <td><input type="text" id="work2pos"> </td>
+                            <td><input type="checkbox" id="nowork2"><i>check bila tidak ada</i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="work3"></td>
+                            <td><input type="number " id="work3dur"></td>
+                            <td><input type="text" id="work3pos"> </td>
+                            <td><input type="checkbox" id="nowork3"><i>check bila tidak ada</i></td>
+                        </tr>
+ 
+                    </table>
+        </fieldset>
+
+
+        <!-- <p><input type="submit" value="Submit"></p>
+    </form> -->
+
+
+    <button onclick="fungsiKu()"> Coba klik! </button>  <!-- kalau di click fungsi di jalankan-->
+
+    <p id="output">output</p>
+    
+    <script>
+        function fungsiKu() {
+            function value(x){return document.getElementById(x).value};
+
+            let nama = value("nama");             // let nama = document.getElementById("nama").value
+            let birthdate = value("birthdate");
+            let birthplace = value("birthplace");
+            let gender = value("gender");
+            let phone = value("phone");
+            let email = value("email");
+            let instSD=value("instSD");
+            let yearSD=value("yearSD");
+            let instSMP=value("instSMP");
+            let yearSMP=value("yearSMP");
+            
+            let instSMA=value("instSMA");
+            let yearSMA=value("yearSMA");
+            
+            let instS1=value("instS1");
+            let yearS1=value("yearS1");
+
+            let work1=value("work1");
+            let work1dur=value("work1dur");
+            let work1pos=value("work1pos");
+            let nowork1=value("nowork1");
+            
+            let work2=value("work2");
+            let work2dur=value("work2dur");
+            let work2pos=value("work2pos");
+            let nowork2=value("nowork2");
+
+            let work3=value("work3");
+            let work3dur=value("work3dur");
+            let work3pos=value("work3pos");
+            let nowork3=value("nowork3");
+
+
+            var work1display=`
+                                <tr>
+                                    <td>${work1}</td>
+                                    <td>${work1dur} tahun</td>
+                                    <td>${work1pos}</td>
+                                </tr>`
+            var work2display=`
+                                <tr>
+                                    <td>${work2}</td>
+                                    <td>${work2dur} tahun</td>
+                                    <td>${work2pos}</td>
+                                </tr>`
+            var work3display=`
+                                <tr>
+                                    <td>${work3}</td>
+                                    <td>${work3dur} tahun</td>
+                                    <td>${work3pos}</td>
+                                </tr>`
+
+            if (nowork1==true){work1display="tidak ada"}
+            
+            console.log(work1display)
+
+            console.log(nama)
+
+
+            document.getElementById("output").innerHTML=`
+                    <style> 
+                    h3{color:white; background-color:darkslategray} 
+                    section {border-style:solid; border-color: darkslategray}
+                    </style>
+                    <div>
+                        <h3>PERSONAL DATA</h3>
+                        <section class="content">
+                            <table>
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>: ${nama}</td>
+                                </tr>
+                                <tr>
+                                    <td>Tempat / Tanggal Lahir</td>
+                                    <td>: ${birthplace}, ${birthdate}</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>: ${gender}</td>
+                                </tr>
+                                <tr>
+                                    <td>Telepon</td>
+                                    <td>: ${phone}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>: ${email}</td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
+
+                    <div>
+                        <h3>RIWAYAT PENDIDIKAN</h3>
+                        <section class="content">
+                            <table>
+                                <tr>
+                                    <td>SD</td>
+                                    <td>: ${instSD}</td>
+                                    <td>Tahun Lulus</td>
+                                    <td>: ${yearSD}</td>
+                                </tr>
+                                <tr>
+                                    <td>SMP</td>
+                                    <td>: ${instSMP}</td>
+                                    <td>Tahun Lulus</td>
+                                    <td>: ${yearSMP}</td>
+                                </tr>
+                                <tr>
+                                    <td>SMA</td>
+                                    <td>: ${instSMA}</td>
+                                    <td>Tahun Lulus</td>
+                                    <td>: ${yearSMA}</td>
+                                </tr>
+                                <tr>
+                                    <td>S1</td>
+                                    <td>: ${instS1}</td>
+                                    <td>Tahun Lulus</td>
+                                    <td>: ${yearS1}</td>
+                                </tr>
+                    
+                            </table>
+                        </section>
+                    </div>
+
+                    <div>
+                        <h3>RIWAYAT PEKERJAAN</h3>
+                        <section class="content">
+                            <table>
+                                <tr>
+                                    <th>Nama Pendidikan</th>
+                                    <th>Lama Bekerja</th>
+                                    <th>Posisi</th>
+                                </tr>
+                                ${work1display}
+                                ${work2display}
+                                ${work3display}
+
+                            </table>
+                        </section>
+                    </div>`
+        }
+    </script>
+
+
+</body>
+</html>
